@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Project | Abdurrohman</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { font-family: 'Inter', system-ui, sans-serif; }
+    .transition-theme { transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease; }
+    section { scroll-margin-top: 4rem; }
+  </style>
+</head>
+
+<body class="transition-theme bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 pt-20 relative">
+
+  <!-- ================= HEADER ================= -->
+  <header class="bg-white/90 dark:bg-slate-900/90 backdrop-blur border-b border-slate-200 dark:border-slate-700 fixed w-full z-50 transition-theme">
+    <div class="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
+<a href="index.html#projects" class="inline-block">
+  <h1 class="text-xl font-bold
+             bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-500
+             bg-clip-text text-transparent
+             hover:from-indigo-500 hover:to-purple-500
+             transition-all duration-300">
+    My Project
+  </h1>
+</a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#gambar" class="hover:text-indigo-600 transition-colors">Gambar</a>
+        <a href="#video" class="hover:text-indigo-600 transition-colors">Video</a>
+        <button id="themeToggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">🌙</button>
+      </nav>
+
+      <!-- Mobile -->
+      <div class="md:hidden flex items-center gap-3">
+        <button id="themeToggleMobile" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">🌙</button>
+        <button id="menuBtn" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700 transition-theme">
+      <nav class="flex flex-col px-6 py-4 gap-4 text-sm">
+        <a href="#gambar" class="hover:bg-slate-100 dark:hover:bg-slate-800 px-2 py-1 rounded transition-colors">Gambar</a>
+        <a href="#video" class="hover:bg-slate-100 dark:hover:bg-slate-800 px-2 py-1 rounded transition-colors">Video</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= INTRO ================= -->
+  <section class="max-w-7xl mx-auto px-6 py-16 text-center">
+    <h2 class="text-3xl font-bold mb-4">Kumpulan Project Tugas</h2>
+    <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+      Halaman ini berisi dokumentasi tugas sekolah berupa gambar dan video dengan tampilan rapi, responsif, dan modern.
+    </p>
+  </section>
+
+ <section id="gambar" class="max-w-7xl mx-auto px-6 py-16">
+  <h3 class="text-2xl font-semibold mb-10 text-center">📷 Project Gambar</h3>
+  
+  <div class="flex flex-wrap justify-center gap-8">
+    
+    <div class="max-w-sm w-full bg-white dark:bg-gray-800/80 dark:border dark:border-gray-700 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transform transition-all duration-300 p-5">
+      <img src="img/pengalaman bahasa arab di hsi.jpg" class="w-full h-52 object-cover rounded-t-2xl" alt="Project 1">
+      <h4 class="font-semibold text-gray-900 dark:text-indigo-200 mt-4">Project 1</h4>
+      <p class="text-sm text-slate-600 dark:text-gray-300 mt-1">Pengalaman saya dalam belajar bahasa arab di hsi</p>
+      <a href="img/pengalaman bahasa arab di hsi.jpg" class="mt-3 inline-block text-indigo-500 dark:text-indigo-300 hover:underline font-medium text-sm">View Details →</a>
+    </div>
+
+    <div class="max-w-sm w-full bg-white dark:bg-gray-800/80 dark:border dark:border-gray-700 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transform transition-all duration-300 p-5">
+      <img src="img/Poto kisah kedua orang tuaku dalam bahasa arab.jpg" class="w-full h-52 object-cover rounded-t-2xl" alt="Project 2">
+      <h4 class="font-semibold text-gray-900 dark:text-indigo-200 mt-4">Project 2</h4>
+      <p class="text-sm text-slate-600 dark:text-gray-300 mt-1">Kisah kedua orangtuaku dalam bahasa arab</p>
+      <a href="img/Poto kisah kedua orang tuaku dalam bahasa arab.jpg" class="mt-3 inline-block text-indigo-500 dark:text-indigo-300 hover:underline font-medium text-sm">View Details →</a>
+    </div>
+
+  </div> </section>
+
+<section id="video" class="max-w-7xl mx-auto px-6 py-16">
+  <h3 class="text-2xl font-semibold mb-10 text-center">
+    🎥 Project Video
+  </h3>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 flex items-center justify-center">
+
+    <!-- Video 1 -->
+    <div class="bg-white dark:bg-gray-800/80 dark:border dark:border-gray-700 
+                rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 
+                transform transition-all duration-300 p-5">
+
+      <div class="w-full h-52 rounded-t-2xl overflow-hidden bg-black">
+        <iframe class="w-full h-full"
+          src="https://youtube.com/embed/sh27HY66f50"
+          loading="lazy" allowfullscreen>
+        </iframe>
+      </div>
+
+      <h4 class="font-semibold text-gray-900 dark:text-indigo-200 mt-4">
+        Video project 1
+      </h4>
+      <p class="text-sm text-slate-600 dark:text-gray-300 mt-1">
+        Menjelaskan kandungan ayat surah As-Syarh
+      </p>
+      <a href="https://youtube.com/shorts/sh27HY66f50?si=VYbPbMiT8g79JcSN" class="mt-3 inline-block text-indigo-500 dark:text-indigo-300 hover:underline font-medium text-sm">
+        View Details →
+      </a>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="bg-white dark:bg-gray-800/80 dark:border dark:border-gray-700 
+                rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 
+                transform transition-all duration-300 p-5">
+
+      <div class="w-full h-52 rounded-t-2xl overflow-hidden bg-black">
+        <iframe class="w-full h-full"
+          src="https://youtube.com/embed/ppwpSItmqqw"
+          loading="lazy" allowfullscreen>
+        </iframe>
+      </div>
+
+      <h4 class="font-semibold text-gray-900 dark:text-indigo-200 mt-4">
+        Video Project 2
+      </h4>
+      <p class="text-sm text-slate-600 dark:text-gray-300 mt-1">
+        Percakapan berbahasa arab
+      </p>
+      <a href="https://youtu.be/ppwpSItmqqw?si=Bccx-X5RRQM-8pE_" class="mt-3 inline-block text-indigo-500 dark:text-indigo-300 hover:underline font-medium text-sm">
+        View Details →
+      </a>
+    </div>
+
+    <!-- ================= VIDEO 3 (YouTube Embed) ================= -->
+    <div class="max-w-md w-full bg-white dark:bg-gray-800/80 dark:border dark:border-gray-700
+                rounded-2xl shadow-lg p-5 hover:shadow-2xl hover:scale-105
+                transform transition-all duration-300">
+
+      <div class="w-full aspect-video rounded-xl overflow-hidden bg-black">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/iNefsuV0JRE"
+          title="Video Project 3"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <h4 class="font-semibold text-gray-900 dark:text-indigo-200 mt-4">
+        Video Project 3
+      </h4>
+      <p class="text-sm text-slate-600 dark:text-gray-300 mt-1">
+        Membaca Kitab Ulama tanpa harokat menggunakan 2 kamera laptop
+      </p>
+
+      <a href="https://youtu.be/iNefsuV0JRE"
+         target="_blank"
+         class="inline-block mt-3 text-indigo-500 dark:text-indigo-300 hover:underline font-medium text-sm">
+        View Details →
+      </a>
+    </div>
+ 
+    <!-- ================= VIDEO 4 (YouTube Embed) ================= -->
+    <div class="max-w-md w-full bg-white dark:bg-gray-800/80 dark:border dark:border-gray-700
+                rounded-2xl shadow-lg p-5 hover:shadow-2xl hover:scale-105
+                transform transition-all duration-300">
+
+      <div class="w-full aspect-video rounded-xl overflow-hidden bg-black">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/miMzIVC3SQg"
+          title="Video Project 3"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <h4 class="font-semibold text-gray-900 dark:text-indigo-200 mt-4">
+        Video Project 4
+      </h4>
+      <p class="text-sm text-slate-600 dark:text-gray-300 mt-1">
+        Video Membaca Kitab Ulama tanpa harokat bertatap meka dengan ustadz
+      </p>
+
+      <a href="https://youtu.be/miMzIVC3SQg"
+         target="_blank"
+         class="inline-block mt-3 text-indigo-500 dark:text-indigo-300 hover:underline font-medium text-sm">
+        View Details →
+      </a>
+    </div>
+ 
+    <!-- Video 5 -->
+    <div class="bg-white dark:bg-gray-800/80 dark:border dark:border-gray-700 
+                rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 
+                transform transition-all duration-300 p-5">
+
+      <div class="w-full h-52 rounded-t-2xl overflow-hidden bg-black">
+        <iframe class="w-full h-full"
+          src="vidio/vidio khiwar x harun.mp4"
+          loading="lazy" allowfullscreen>
+        </iframe>
+      </div>
+
+      <h4 class="font-semibold text-gray-900 dark:text-indigo-200 mt-4">
+        Video Project 5
+      </h4>
+      <p class="text-sm text-slate-600 dark:text-gray-300 mt-1">
+        Vidio percakapan bahasa arab bertemakan liburan
+      </p>
+      <a href="vidio/vidio khiwar x harun.mp4" class="mt-3 inline-block text-indigo-500 dark:text-indigo-300 hover:underline font-medium text-sm">
+        View Details →
+      </a>
+    </div>
+
+    <!-- ================= VIDEO 6 (YouTube Embed) ================= -->
+    <div class="max-w-md w-full bg-white dark:bg-gray-800/80 dark:border dark:border-gray-700
+                rounded-2xl shadow-lg p-5 hover:shadow-2xl hover:scale-105
+                transform transition-all duration-300">
+
+      <div class="w-full aspect-video rounded-xl overflow-hidden bg-black">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/ROiEmUGCMPc"
+          title="Video Project 3"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <h4 class="font-semibold text-gray-900 dark:text-indigo-200 mt-4">
+        Video Project 6
+      </h4>
+      <p class="text-sm text-slate-600 dark:text-gray-300 mt-1">
+        Video vlog kegiatan Belajar Mengajar sehari-hari di pondok HSI
+      </p>
+
+      <a href="https://youtu.be/miMzIVC3SQg"
+         target="_blank"
+         class="inline-block mt-3 text-indigo-500 dark:text-indigo-300 hover:underline font-medium text-sm">
+        View Details →
+      </a>
+    </div>
+
+<div class="lg:col-span-3 flex justify-center">
+  <div class="bg-white dark:bg-gray-800/80 dark:border dark:border-gray-700
+              rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105
+              transform transition-all duration-300 p-5
+              w-full sm:w-[48%] lg:w-[32%]">
+
+    <div class="w-full aspect-video rounded-xl overflow-hidden bg-black">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/JcM0XX1z2mE"
+        title="Video Project 7"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <h4 class="font-semibold text-gray-900 dark:text-indigo-200 mt-4">
+      Video Project 7
+    </h4>
+    <p class="text-sm text-slate-600 dark:text-gray-300 mt-1">
+      Video vlog pertama kali saya belajar bahasa arab di pondok HSI
+    </p>
+
+    <a href="https://youtu.be/JcM0XX1z2mE"
+       target="_blank"
+       class="inline-block mt-3 text-indigo-500 dark:text-indigo-300 hover:underline font-medium text-sm">
+      View Details →
+    </a>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+<!-- Back to Home -->
+<div class="max-w-7xl mx-auto px-6 py-6 text-center">
+  <a href="index.html#projects"
+     class="inline-flex items-center gap-2 px-8 py-3 rounded-full
+            bg-slate-900 text-white
+            dark:bg-slate-100 dark:text-slate-900
+            hover:scale-105 transition font-medium shadow-lg">
+    ← Kembali ke MyProjet
+  </a>
+</div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-white/90 dark:bg-slate-900/90 border-t border-slate-200 dark:border-slate-700 mt-16 transition-theme">
+    <div class="max-w-7xl mx-auto px-6 py-6 text-center text-sm text-slate-500 dark:text-slate-400">
+      © 2025 Abdurrohman — Project Portfolio
+    </div>
+  </footer>
+
+  <!-- ================= JAVASCRIPT ================= -->
+  <script>
+    const html = document.documentElement;
+
+    // Hamburger Menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Dark / Light Mode
+    const themeBtns = document.querySelectorAll('#themeToggle, #themeToggleMobile');
+
+    function updateIcon() {
+      themeBtns.forEach(btn => btn.textContent = html.classList.contains('dark') ? '☀️' : '🌙');
+    }
+
+    function setTheme(mode) {
+      if (mode === 'dark') {
+        html.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        html.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      }
+      updateIcon();
+    }
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) setTheme(savedTheme);
+    else if (window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
+    else setTheme('light');
+
+    themeBtns.forEach(btn => btn.addEventListener('click', () => {
+      setTheme(html.classList.contains('dark') ? 'light' : 'dark');
+    }));
+  </script>
+
+</body>
+</html>
